@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="icl-JE-bvb">
+    <device id="retina4_0" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="wEq-ic-mne">
+            <objects>
+                <viewController id="icl-JE-bvb" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Qda-mh-jlr"/>
+                        <viewControllerLayoutGuide type="bottom" id="OhB-aT-T5Y"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mHB-DS-gDm">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="LbN-rQ-SjI">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mocBottom" translatesAutoresizingMaskIntoConstraints="NO" id="fSw-6j-9tA">
+                                        <rect key="frame" x="0.0" y="0.0" width="568" height="220"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="fSw-6j-9tA" secondAttribute="height" multiplier="512:512" id="pdv-p8-xWp"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="va5-VP-JW6">
+                                        <rect key="frame" x="0.0" y="270" width="568" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="ohV-x9-aBB"/>
+                                        </constraints>
+                                        <state key="normal" title="Tap to Begin">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="UiX-m1-v1p"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LbN-rQ-SjI" firstAttribute="top" secondItem="mHB-DS-gDm" secondAttribute="top" id="GgA-nh-rPa"/>
+                            <constraint firstItem="LbN-rQ-SjI" firstAttribute="leading" secondItem="mHB-DS-gDm" secondAttribute="leading" id="Vdd-hd-BAd"/>
+                            <constraint firstAttribute="bottom" secondItem="LbN-rQ-SjI" secondAttribute="bottom" id="hi8-J2-ut6"/>
+                            <constraint firstAttribute="trailing" secondItem="LbN-rQ-SjI" secondAttribute="trailing" id="srg-v3-Yvw"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GnV-iV-NKA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-697.18309859154931" y="-75"/>
+        </scene>
+        <!--Survey View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SurveyViewController" customModule="VidSurvey" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="1lr-BC-IFw">
+            <objects>
+                <viewController storyboardIdentifier="detailViewController" id="ugW-fv-97H" customClass="DetailViewController" customModule="VidSurvey" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7vO-xO-d6H"/>
+                        <viewControllerLayoutGuide type="bottom" id="fw0-2j-niC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="detailViewController" id="sk0-Mv-K6k" customClass="deta">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mUW-Yi-L1o">
+                                <rect key="frame" x="0.0" y="579" width="568" height="44"/>
+                                <items>
+                                    <barButtonItem title="Action" id="yqh-de-liu">
+                                        <connections>
+                                            <action selector="shareWithSender:" destination="ugW-fv-97H" id="TcV-ix-G2G"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mUW-Yi-L1o" firstAttribute="leading" secondItem="sk0-Mv-K6k" secondAttribute="leading" id="3YB-93-A2E"/>
+                            <constraint firstItem="mUW-Yi-L1o" firstAttribute="top" secondItem="7vO-xO-d6H" secondAttribute="bottom" constant="559" id="OcM-6w-PLU"/>
+                            <constraint firstAttribute="trailing" secondItem="mUW-Yi-L1o" secondAttribute="trailing" id="YYU-hf-6Pl"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aqa-at-3zB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="840" y="56"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="mocBottom" width="512" height="512"/>
+    </resources>
+    <color key="tintColor" red="1" green="0.68361870283917692" blue="0.058353589249056537" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+</document>
